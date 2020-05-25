@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lib="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <comcontrol.CPreTextView
+        android:id="@+id/tp_line"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        lib:layout_constraintWidth_percent="1"
+        lib:layout_constraintTop_toTopOf="parent"
+        lib:layout_constraintLeft_toLeftOf="parent"
+        lib:layout_constraintBottom_toBottomOf="parent"
+        lib:layout_constraintRight_toRightOf="parent"
+        lib:layout_constraintVertical_bias="0"
+        lib:layout_constraintHorizontal_bias="0.5"
+        android:background="@color/split_line2"
+        />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/miCtls"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        lib:layout_constraintWidth_percent="0.98"
+        lib:layout_constraintHeight_percent="0.98"
+        lib:layout_constraintTop_toBottomOf="@id/tp_line"
+        lib:layout_constraintLeft_toLeftOf="parent"
+        lib:layout_constraintBottom_toBottomOf="parent"
+        lib:layout_constraintRight_toRightOf="parent"
+        lib:layout_constraintVertical_bias="0.5"
+        lib:layout_constraintHorizontal_bias="0.5"
+        android:orientation="horizontal" >
+        <comcontrol.CPreTextView
+            android:id="@+id/leftVline1"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            lib:layout_constraintHeight_percent="1"
+            lib:layout_constraintTop_toTopOf="parent"
+            lib:layout_constraintLeft_toLeftOf="parent"
+            lib:layout_constraintBottom_toBottomOf="parent"
+            lib:layout_constraintRight_toRightOf="parent"
+            lib:layout_constraintVertical_bias="0"
+            lib:layout_constraintHorizontal_bias="0"
+             android:background="@color/split_line2"
+            />
+        <cn.com.williamxia.wipack.control.CButton
+            android:id="@+id/btn_item_ONOFF"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            lib:layout_constraintHeight_percent="0.98"
+            lib:layout_constraintWidth_percent="0.32"
+            lib:layout_constraintTop_toTopOf="parent"
+            lib:layout_constraintLeft_toRightOf="@id/leftVline1"
+            lib:layout_constraintBottom_toBottomOf="parent"
+            lib:layout_constraintRight_toRightOf="parent"
+            lib:layout_constraintVertical_bias="0.5"
+            lib:layout_constraintHorizontal_bias="0.01"
+            android:layout_gravity="center_vertical"
+            android:text="OFF"
+            style="@style/AllTextSize"
+            android:background="@drawable/mgray_to_green_btn"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+
+        <comcontrol.CPreTextView
+            android:id="@+id/leftvline2"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            lib:layout_constraintHeight_percent="1"
+            lib:layout_constraintTop_toTopOf="parent"
+            lib:layout_constraintLeft_toRightOf="@id/btn_item_ONOFF"
+            lib:layout_constraintBottom_toBottomOf="parent"
+            lib:layout_constraintRight_toRightOf="parent"
+            lib:layout_constraintVertical_bias="0"
+            lib:layout_constraintHorizontal_bias="0.01"
+
+
+            android:background="@color/split_line2" />
+
+        <comcontrol.CPreTextView
+            android:id="@+id/tv_item_num"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            lib:layout_constraintHeight_percent="0.98"
+            lib:layout_constraintWidth_percent="0.22"
+            lib:layout_constraintTop_toTopOf="parent"
+            lib:layout_constraintLeft_toRightOf="@id/leftvline2"
+            lib:layout_constraintBottom_toBottomOf="parent"
+            lib:layout_constraintRight_toRightOf="parent"
+            lib:layout_constraintVertical_bias="0.5"
+            lib:layout_constraintHorizontal_bias="0.01"
+            style="@style/AllTextSize"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="01"/>
+
+        <comcontrol.CPreTextView
+            android:id="@+id/leftVline3"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            lib:layout_constraintHeight_percent="1"
+            lib:layout_constraintTop_toTopOf="parent"
+            lib:layout_constraintLeft_toRightOf="@id/tv_item_num"
+            lib:layout_constraintBottom_toBottomOf="parent"
+            lib:layout_constraintRight_toRightOf="parent"
+            lib:layout_constraintVertical_bias="0"
+            lib:layout_constraintHorizontal_bias="0.01"
+            android:background="@color/split_line2" />
+
+        <comcontrol.CPreTextView
+            android:id="@+id/tv_item_channel"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            lib:layout_constraintHeight_percent="0.98"
+            lib:layout_constraintWidth_percent="0.42"
+            lib:layout_constraintTop_toTopOf="parent"
+            lib:layout_constraintLeft_toRightOf="@id/leftVline3"
+            lib:layout_constraintBottom_toBottomOf="parent"
+            lib:layout_constraintRight_toRightOf="parent"
+            lib:layout_constraintVertical_bias="0.5"
+            lib:layout_constraintHorizontal_bias="0.01"
+
+
+            style="@style/AllTextSize"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Channel"/>
+
+        <comcontrol.CPreTextView
+            android:id="@+id/eftVline4"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            lib:layout_constraintHeight_percent="1"
+            lib:layout_constraintTop_toTopOf="parent"
+            lib:layout_constraintLeft_toRightOf="@id/tv_item_channel"
+            lib:layout_constraintBottom_toBottomOf="parent"
+            lib:layout_constraintRight_toRightOf="parent"
+            lib:layout_constraintVertical_bias="0"
+            lib:layout_constraintHorizontal_bias="0.01"
+
+            android:background="@color/split_line2" />
+    </android.support.constraint.ConstraintLayout>
+
+
+    <comcontrol.CPreTextView
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        lib:layout_constraintWidth_percent="1"
+        lib:layout_constraintTop_toBottomOf="@id/miCtls"
+        lib:layout_constraintLeft_toLeftOf="parent"
+        lib:layout_constraintBottom_toBottomOf="parent"
+        lib:layout_constraintRight_toRightOf="parent"
+        lib:layout_constraintVertical_bias="0"
+        lib:layout_constraintHorizontal_bias="0"
+
+
+        android:background="@color/split_line2" />
+
+</android.support.constraint.ConstraintLayout>

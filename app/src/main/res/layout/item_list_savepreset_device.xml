@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:lib="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_color">
+
+    <comcontrol.CPreTextView
+        android:id="@+id/lbPresetName"
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:gravity="center_vertical"
+        android:textSize="25px"
+        android:text="xxxxxx"
+        android:textColor="@color/white"
+        />
+</LinearLayout>

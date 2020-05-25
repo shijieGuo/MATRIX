@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <comcontrol.CPreTextView
+        android:id="@+id/tv_ip_address_name1"
+        style="@style/listview_itemTV_style"
+        android:textColor="@color/white"
+        android:textSize="35px"
+        android:text="TextView" />
+</LinearLayout>

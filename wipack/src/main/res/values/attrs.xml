@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PrecentProgressBar">
+        <attr name="preProgresBar_txtColor" format="color" />
+        <attr name="preProgresBar_txtSize" format="float" />
+    </declare-styleable>
+
+
+    <declare-styleable name="FFTView">
+        <attr name="fft_gridColor" format="color" />
+        <attr name="fft_midLineColor" format="color" />
+        <attr name="fft_textLbColor" format="color" />
+        <attr name="fft_gLineColor" format="color" />
+
+        <attr name="fft_textLbSize" format="integer" />
+        <attr name="fft_bottomHeight" format="integer" />
+        <attr name="fft_leftWidth" format="integer" />
+        <attr name="fft_topHeight" format="integer" />
+        <attr name="fft_rightSpace" format="integer" />
+        <attr name="fft_capRadius" format="integer" />
+
+    </declare-styleable>
+
+    <declare-styleable name="CFourStatusLed">
+        <attr name="LedState" format="integer" />
+        <attr name="ledTag" format="integer" />
+        <attr name="ledTypeValue" format="integer" />
+
+        <attr name="ledColor_off" format="color" />
+        <attr name="ledColor_start" format="color" />
+        <attr name="ledColor_sig" format="color" />
+        <attr name="ledColor_clip" format="color" />
+
+    </declare-styleable>
+
+    <declare-styleable name="CMeter">
+        <attr name="meterValue" format="integer" />
+        <attr name="meterMaxValue" format="integer" />
+        <attr name="meterLeftRightGap" format="integer" />
+        <attr name="meterUpDownGap" format="integer" />
+        <attr name="meterUnactiveLedColor" format="color" />
+        <attr name="meterActiveLedColor" format="color" />
+        <attr name="meterIsReverse" format="boolean" />
+        <attr name="meterIsSmooth" format="boolean" />
+        <attr name="meterClipNum" format="integer" />
+        <attr name="meterSigNum" format="integer" />
+        <attr name="meterSigColor" format="color" />
+        <attr name="meterClipColor" format="color" />
+
+
+    </declare-styleable>
+
+
+    <declare-styleable name="CButton">
+        <attr name="iTag" format="integer" />
+        <attr name="typeValue" format="integer" />
+        <attr name="parentID" format="integer" />
+
+    </declare-styleable>
+
+
+    <!--must declare first here below -->
+    <declare-styleable name="CThreeStatusButton">
+        <attr name="Image_Peak" format="reference" />
+        <attr name="Image_Low" format="reference" />
+        <attr name="Image_High" format="reference" />
+        <attr name="Status_button" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="SquareLed">
+        <attr name="colorActive" format="color" />
+        <attr name="colorUnActive" format="color" />
+        <attr name="isActive" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CLimitGDSlider">
+        <attr name="RatioMax" format="integer" />
+        <attr name="RatioPos" format="integer" />
+        <attr name="ThresholdPos" format="integer" />
+        <attr name="ThresholdMax" format="integer" />
+        <attr name="GainMax" format="integer" />
+        <attr name="GainPos" format="integer" />
+        <attr name="GLimiteType" format="integer" />
+
+        <attr name="lineColor" format="color" />
+
+    </declare-styleable>
+
+
+    <declare-styleable name="CSlider">
+        <attr name="thumbImage" format="reference" />
+        <attr name="MaxValue" format="integer" />
+        <attr name="MinValue" format="integer" />
+        <attr name="value" format="integer" />
+        <attr name="thumbWidth" format="integer" />
+        <attr name="thumbHeight" format="integer" />
+
+        <attr name="isHorizontal" format="boolean" />
+        <attr name="thumbOffset" format="float" />
+        <attr name="isNeedDrawBack" format="boolean" />
+        <attr name="dockTop" format="float" />
+        <attr name="dockBottom" format="float" />
+        <attr name="headGap" format="float" />
+        <attr name="headGapRatio" format="float" />
+        <attr name="tailGap" format="float" />
+        <attr name="dragable" format="boolean" />
+        <attr name="trackColor" format="color" />
+        <attr name="cslider_bkNormalImge" format="reference" />
+        <attr name="cslider_bkPressImge" format="reference" />
+        <attr name="thumbWidthRatio" format="float" />
+        <attr name="thumbHeightRaito" format="float" />
+
+    </declare-styleable>
+    <declare-styleable name="CUpdown">
+        <attr name="upMaxValue" format="integer" />
+        <attr name="upMinValue" format="integer" />
+        <attr name="uValue" format="integer" />
+        <attr name="uiTag" format="integer" />
+
+    </declare-styleable>
+
+</resources>

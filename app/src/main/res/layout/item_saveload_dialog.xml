@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        >
+        <comcontrol.CPreTextView
+            android:id="@+id/lb_Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="40px"
+            android:gravity="center"
+            android:text="Please input a new name."
+            android:textColor="@color/white"
+            android:textSize="35px" />
+
+        <comcontrol.CPreEdiTxt
+            android:id="@+id/ed_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10px"
+            android:background="@color/bg_color"
+            android:gravity="center"
+            android:hint="input preset name"
+            android:maxLength="10"
+            android:digits="@string/InpuNumberLeter"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gray"
+            android:textSize="35px" />
+    </LinearLayout>
+</LinearLayout>

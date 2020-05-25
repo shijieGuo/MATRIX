@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lib="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="horizontal">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/vtLeft"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        lib:layout_constraintBottom_toBottomOf="parent"
+        lib:layout_constraintHeight_percent="0.6"
+        lib:layout_constraintHorizontal_bias="0.01"
+        lib:layout_constraintLeft_toLeftOf="parent"
+        lib:layout_constraintRight_toRightOf="parent"
+        lib:layout_constraintTop_toTopOf="parent"
+        lib:layout_constraintVertical_bias="0.5"
+        lib:layout_constraintWidth_percent="0.18">
+
+        <comcontrol.CPreButton
+            android:id="@+id/btn_passSet"
+            style="@style/AllTextSize"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/mgray_to_green_st"
+            android:text="Password \nSetting"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            lib:layout_constraintBottom_toBottomOf="parent"
+            lib:layout_constraintHeight_percent="0.20"
+            lib:layout_constraintHorizontal_bias="0.5"
+            lib:layout_constraintLeft_toLeftOf="parent"
+            lib:layout_constraintRight_toRightOf="parent"
+            lib:layout_constraintTop_toTopOf="parent"
+            lib:layout_constraintVertical_bias="0.30"
+            lib:layout_constraintWidth_percent="0.72" />
+
+        <comcontrol.CPreButton
+            android:id="@+id/btn_showlock"
+            style="@style/AllTextSize"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/mgray_to_red_st"
+            android:text="Lock System"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            lib:layout_constraintBottom_toBottomOf="parent"
+            lib:layout_constraintHeight_percent="0.20"
+            lib:layout_constraintHorizontal_bias="0.01"
+            lib:layout_constraintLeft_toLeftOf="@id/btn_passSet"
+            lib:layout_constraintRight_toRightOf="parent"
+            lib:layout_constraintTop_toBottomOf="@id/btn_passSet"
+            lib:layout_constraintVertical_bias="0.2"
+            lib:layout_constraintWidth_percent="0.72" />
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:id="@+id/lefVLine"
+        android:layout_width="1px"
+        android:layout_height="0dp"
+        android:background="@color/gray"
+        lib:layout_constraintBottom_toBottomOf="parent"
+        lib:layout_constraintHeight_percent="1"
+        lib:layout_constraintHorizontal_bias="0.01"
+        lib:layout_constraintLeft_toRightOf="@id/vtLeft"
+        lib:layout_constraintRight_toRightOf="parent"
+        lib:layout_constraintTop_toTopOf="parent"
+        lib:layout_constraintVertical_bias="0.01" />
+
+    <comcontrol.CPreTextView
+        android:id="@+id/lbTitle"
+        style="@style/AllTextSize"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Preset List"
+        android:textColor="@color/white"
+        lib:layout_constraintBottom_toBottomOf="parent"
+        lib:layout_constraintHeight_percent="0.05"
+        lib:layout_constraintHorizontal_bias="0.01"
+        lib:layout_constraintLeft_toRightOf="@id/lefVLine"
+        lib:layout_constraintRight_toRightOf="parent"
+        lib:layout_constraintTop_toTopOf="parent"
+        lib:layout_constraintVertical_bias="0.01"
+        lib:layout_constraintWidth_percent="0.2" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/lvbkList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/backgroud_saveload"
+        lib:layout_constraintBottom_toTopOf="@id/gp_status"
+        lib:layout_constraintHeight_percent="0.68"
+        lib:layout_constraintHorizontal_bias="0.5"
+        lib:layout_constraintLeft_toRightOf="@id/lefVLine"
+        lib:layout_constraintRight_toRightOf="parent"
+        lib:layout_constraintTop_toBottomOf="@id/lbTitle"
+        lib:layout_constraintVertical_bias="0.01"
+        lib:layout_constraintWidth_percent="0.80">
+
+        <ListView
+            android:id="@+id/lvSaveLoad"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/ipcon_color"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbarSize="20px"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbarTrackVertical="@color/gray"
+            android:scrollbars="vertical"
+            lib:layout_constraintBottom_toBottomOf="parent"
+            lib:layout_constraintHeight_percent="0.99"
+            lib:layout_constraintHorizontal_bias="0.5"
+            lib:layout_constraintLeft_toLeftOf="parent"
+            lib:layout_constraintRight_toRightOf="parent"
+            lib:layout_constraintTop_toTopOf="parent"
+            lib:layout_constraintVertical_bias="0.5"
+            lib:layout_constraintWidth_percent="0.99"
+
+            />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/gp_status"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/grid_preset_all"
+        android:orientation="horizontal"
+        lib:layout_constraintBottom_toBottomOf="@id/rightArea"
+        lib:layout_constraintHeight_percent="0.1"
+        lib:layout_constraintHorizontal_bias="0.5"
+        lib:layout_constraintLeft_toLeftOf="@id/lvbkList"
+        lib:layout_constraintRight_toRightOf="parent"
+        lib:layout_constraintTop_toBottomOf="@id/lvbkList"
+        lib:layout_constraintVertical_bias="0.01"
+        lib:layout_constraintWidth_percent="0.80">
+
+
+        <comcontrol.CPreTextView
+            android:id="@+id/lvstats"
+            style="@style/AllTextSize"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="Status:"
+            android:textColor="@color/white"
+            lib:layout_constraintBottom_toBottomOf="parent"
+            lib:layout_constraintHeight_percent="0.6"
+            lib:layout_constraintHorizontal_bias="0.01"
+            lib:layout_constraintLeft_toLeftOf="parent"
+            lib:layout_constraintRight_toLeftOf="@+id/tvStatus"
+            lib:layout_constraintTop_toTopOf="parent"
+            lib:layout_constraintVertical_bias="0.5"
+            lib:layout_constraintWidth_percent="0.2" />
+
+        <comcontrol.CPreTextView
+            android:id="@+id/tvStatus"
+            style="@style/AllTextSize"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center|bottom"
+            android:hint="Which status "
+            android:text="Hello status"
+            android:textColor="@color/white"
+            lib:layout_constraintBottom_toBottomOf="parent"
+            lib:layout_constraintHeight_percent="0.9"
+            lib:layout_constraintHorizontal_bias="0.01"
+            lib:layout_constraintLeft_toRightOf="@id/lvstats"
+            lib:layout_constraintRight_toRightOf="parent"
+            lib:layout_constraintTop_toTopOf="parent"
+            lib:layout_constraintVertical_bias="0.01"
+            lib:layout_constraintWidth_percent="0.7" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/rightArea"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        lib:layout_constraintBottom_toBottomOf="parent"
+        lib:layout_constraintHeight_percent="0.12"
+        lib:layout_constraintHorizontal_bias="0.2"
+        lib:layout_constraintLeft_toLeftOf="@id/gp_status"
+        lib:layout_constraintRight_toRightOf="parent"
+        lib:layout_constraintTop_toBottomOf="@id/gp_status"
+        lib:layout_constraintVertical_bias="0.01"
+        lib:layout_constraintWidth_percent="0.76">
+
+        <RadioGroup
+            android:id="@+id/rDevGroup"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="left|center"
+            android:orientation="horizontal"
+            lib:layout_constraintBottom_toBottomOf="parent"
+            lib:layout_constraintHeight_percent="0.42"
+            lib:layout_constraintHorizontal_bias="0.1"
+            lib:layout_constraintLeft_toLeftOf="parent"
+            lib:layout_constraintRight_toRightOf="parent"
+            lib:layout_constraintTop_toTopOf="parent"
+            lib:layout_constraintVertical_bias="0.5"
+            lib:layout_constraintWidth_percent="0.38">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/rTypeDev"
+                style="@style/AllTextSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:checked="true"
+                android:gravity="center"
+                android:tag="0"
+                android:text="Device"
+                android:textColor="@color/white"
+                android:textSize="25px" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/rTypePc"
+                style="@style/AllTextSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:checked="false"
+                android:gravity="center"
+                android:tag="1"
+                android:text="Local"
+                android:textColor="@color/white"
+                android:textSize="25px" />
+        </RadioGroup>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/gpBtns"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            lib:layout_constraintBottom_toBottomOf="parent"
+            lib:layout_constraintHeight_percent="0.70"
+            lib:layout_constraintHorizontal_bias="0.1"
+            lib:layout_constraintLeft_toRightOf="@id/rDevGroup"
+            lib:layout_constraintRight_toRightOf="parent"
+            lib:layout_constraintTop_toTopOf="parent"
+            lib:layout_constraintVertical_bias="0.5"
+            lib:layout_constraintWidth_percent="0.6">
+
+            <comcontrol.CPreButton
+                android:id="@+id/btnSave"
+                style="@style/botton_btnStyle"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/mgray_to_green_st"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_big_size"
+                lib:layout_constraintBottom_toBottomOf="parent"
+                lib:layout_constraintHeight_percent="0.84"
+                lib:layout_constraintHorizontal_bias="0.01"
+                lib:layout_constraintLeft_toLeftOf="parent"
+                lib:layout_constraintRight_toRightOf="parent"
+                lib:layout_constraintTop_toTopOf="parent"
+                lib:layout_constraintVertical_bias="0.5"
+                lib:layout_constraintWidth_percent="0.20" />
+
+            <comcontrol.CPreButton
+                android:id="@+id/btnLoad"
+                style="@style/botton_btnStyle"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/mgray_to_green_st"
+                android:text="Load"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_big_size"
+                lib:layout_constraintBottom_toBottomOf="parent"
+                lib:layout_constraintHeight_percent="0.84"
+                lib:layout_constraintHorizontal_bias="0.01"
+
+                lib:layout_constraintLeft_toRightOf="@id/btnSave"
+                lib:layout_constraintRight_toRightOf="parent"
+                lib:layout_constraintTop_toTopOf="@id/btnSave"
+                lib:layout_constraintVertical_bias="0"
+                lib:layout_constraintWidth_percent="0.20" />
+
+            <comcontrol.CPreButton
+                android:id="@+id/btnDelete"
+
+                style="@style/botton_btnStyle"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/mgray_to_green_st"
+                android:text="Delete"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_big_size"
+                lib:layout_constraintBottom_toBottomOf="parent"
+                lib:layout_constraintHeight_percent="0.84"
+                lib:layout_constraintHorizontal_bias="0.01"
+
+                lib:layout_constraintLeft_toRightOf="@id/btnLoad"
+                lib:layout_constraintRight_toRightOf="parent"
+                lib:layout_constraintTop_toTopOf="@id/btnSave"
+                lib:layout_constraintVertical_bias="0"
+                lib:layout_constraintWidth_percent="0.20" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/saveloadSpin"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="100dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:SpinKit_Color="@color/white"
+        app:SpinKit_isNeedWatch="true"
+        lib:layout_constraintBottom_toBottomOf="parent"
+        lib:layout_constraintHeight_percent="1"
+        lib:layout_constraintHorizontal_bias="0.5"
+        lib:layout_constraintLeft_toLeftOf="parent"
+        lib:layout_constraintRight_toRightOf="parent"
+        lib:layout_constraintTop_toTopOf="parent"
+        lib:layout_constraintVertical_bias="0.5"
+        lib:layout_constraintWidth_percent="1"
+
+        />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MPX-4088</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+  <string name="app_ver">Warning! This app is only available for mcu V2.0Ⅱ+ as  MatrixA8MKⅡ!&#8194;&#8194;&#8194;&#8194;&#8194;&#8194;&#8194;&#8194;&#8194;&#8194;&#8194;&#8194;&#8194;&#8194;&#8194;&#8194;&#8194;&#8194;&#8194;&#8194;&#8194;&#8194;&#8194;&#8194;&#8194;&#8194;&#8194;&#8194;       App Version: v1.0&#8194;</string>
+    <string name="mute">Mute</string>
+    <string name="InpuNumberLeter">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+</resources>

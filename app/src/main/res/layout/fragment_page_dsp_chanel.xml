@@ -1,0 +1,116 @@
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:lib="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="WinPages.Page_DspChanel"
+    android:background="@color/bg_color"
+    >
+    <!-- TODO: Update blank fragment layout -->
+    <!--<include layout="@layout/chanel_gain_set"/>-->
+
+        <FrameLayout
+            android:id="@+id/al_channel_content_area"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            lib:layout_constraintWidth_percent="1"
+            lib:layout_constraintHeight_percent="0.88"
+            lib:layout_constraintTop_toTopOf="parent"
+            lib:layout_constraintLeft_toLeftOf="parent"
+            lib:layout_constraintBottom_toBottomOf="parent"
+            lib:layout_constraintRight_toRightOf="parent"
+            lib:layout_constraintVertical_bias="0.01"
+            lib:layout_constraintHorizontal_bias="0.01"    >
+        </FrameLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        lib:layout_constraintWidth_percent="1"
+        lib:layout_constraintHeight_percent="0.12"
+        lib:layout_constraintTop_toBottomOf="@+id/al_channel_content_area"
+        lib:layout_constraintLeft_toLeftOf="parent"
+        lib:layout_constraintBottom_toBottomOf="parent"
+        lib:layout_constraintRight_toRightOf="parent"
+        lib:layout_constraintVertical_bias="0.01"
+        lib:layout_constraintHorizontal_bias="0.01"
+        >
+
+        <comcontrol.CPreButton
+            android:id="@+id/btn_tab_input1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            lib:layout_constraintWidth_percent="0.248"
+            lib:layout_constraintHeight_percent="0.9"
+            lib:layout_constraintTop_toTopOf="parent"
+            lib:layout_constraintLeft_toLeftOf="parent"
+            lib:layout_constraintBottom_toBottomOf="parent"
+            lib:layout_constraintRight_toRightOf="parent"
+            lib:layout_constraintVertical_bias="0.01"
+            lib:layout_constraintHorizontal_bias="0.01"
+
+            android:background="@drawable/mgray_to_green_btn"                android:textColor="@color/white"
+
+            style="@style/AllTextSize"
+            android:textAllCaps="false"
+            android:text="Input CH01-06"/>
+
+        <comcontrol.CPreButton
+            android:id="@+id/btn_tab_input2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            lib:layout_constraintWidth_percent="0.248"
+            lib:layout_constraintHeight_percent="0.9"
+            lib:layout_constraintTop_toTopOf="parent"
+            lib:layout_constraintLeft_toRightOf="@+id/btn_tab_input1"
+            lib:layout_constraintBottom_toBottomOf="parent"
+            lib:layout_constraintRight_toRightOf="parent"
+            lib:layout_constraintVertical_bias="0.01"
+            lib:layout_constraintHorizontal_bias="0"
+            android:background="@drawable/mgray_to_green_btn"
+            android:layout_weight="1"
+            style="@style/AllTextSize"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:text="Input CH07-12"/>
+        <comcontrol.CPreButton
+            android:id="@+id/btn_tab_output1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            lib:layout_constraintWidth_percent="0.248"
+            lib:layout_constraintHeight_percent="0.9"
+            lib:layout_constraintTop_toTopOf="parent"
+            lib:layout_constraintLeft_toRightOf="@+id/btn_tab_input2"
+            lib:layout_constraintBottom_toBottomOf="parent"
+            lib:layout_constraintRight_toRightOf="parent"
+            lib:layout_constraintVertical_bias="0.01"
+            lib:layout_constraintHorizontal_bias="0"
+            android:background="@drawable/mgray_to_green_btn"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            style="@style/AllTextSize"
+            android:text="Output CH01-06"/>
+        <comcontrol.CPreButton
+            android:layout_marginRight="20px"
+            android:id="@+id/btn_tab_output2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            lib:layout_constraintWidth_percent="0.248"
+            lib:layout_constraintHeight_percent="0.9"
+            lib:layout_constraintTop_toTopOf="parent"
+            lib:layout_constraintLeft_toRightOf="@+id/btn_tab_output1"
+            lib:layout_constraintBottom_toBottomOf="parent"
+            lib:layout_constraintRight_toRightOf="parent"
+            lib:layout_constraintVertical_bias="0.01"
+            lib:layout_constraintHorizontal_bias="0"
+            android:background="@drawable/mgray_to_green_btn"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            style="@style/AllTextSize"
+            android:textAllCaps="false"
+            android:text="Output CH07-12"/>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

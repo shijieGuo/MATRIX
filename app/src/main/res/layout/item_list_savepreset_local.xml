@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <comcontrol.CPreTextView
+        android:id="@+id/lbFileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="60px"
+        android:gravity="center_vertical"
+        android:text="xxxPreset"
+        android:textColor="@color/white"
+        android:textSize="30px" />
+
+    <comcontrol.CPreTextView
+        android:id="@+id/lbFileTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="2017-08-08 16:30:21"
+        android:textColor="@color/white"
+        android:textSize="20px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginTop="15px"
+        android:background="@color/orange" />
+
+</LinearLayout>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lib="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    >
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/bk_topV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        lib:layout_constraintWidth_percent="0.98"
+        lib:layout_constraintHeight_percent="0.11"
+        lib:layout_constraintTop_toTopOf="parent"
+        lib:layout_constraintLeft_toLeftOf="parent"
+        lib:layout_constraintBottom_toBottomOf="parent"
+        lib:layout_constraintRight_toRightOf="parent"
+        lib:layout_constraintVertical_bias="0.03"
+        lib:layout_constraintHorizontal_bias="0.5"
+        android:orientation="horizontal">
+        <comcontrol.CPreTextView
+
+            android:id="@+id/lbRDev"
+            style="@style/AllTextSize"
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            lib:layout_constraintWidth_percent="0.18"
+            lib:layout_constraintHeight_percent="0.9"
+            lib:layout_constraintTop_toTopOf="parent"
+            lib:layout_constraintLeft_toLeftOf="parent"
+            lib:layout_constraintBottom_toBottomOf="parent"
+            lib:layout_constraintRight_toRightOf="parent"
+            lib:layout_constraintVertical_bias="0.01"
+            lib:layout_constraintHorizontal_bias="0"
+             android:gravity="right|center_vertical"
+            android:text="Remote Device: "
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/edRemoteDev"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            lib:layout_constraintWidth_percent="0.28"
+            lib:layout_constraintHeight_percent="0.9"
+            lib:layout_constraintTop_toTopOf="@id/lbRDev"
+            lib:layout_constraintLeft_toRightOf="@id/lbRDev"
+            lib:layout_constraintBottom_toBottomOf="parent"
+            lib:layout_constraintRight_toRightOf="parent"
+            lib:layout_constraintVertical_bias="0.01"
+            lib:layout_constraintHorizontal_bias="0"
+            android:background="@drawable/bg_edit_txt_bordergray"
+            style="@style/AllTextSize"
+            android:gravity="center|center_vertical"
+            android:editable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:maxLength="15"
+            android:maxLines="1"
+            android:text="127.0.0.1"
+            android:textColor="@color/white"
+
+            />
+
+        <comcontrol.CPreButton
+            android:id="@+id/btnConnect"
+            style="@style/AllTextSize"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            lib:layout_constraintWidth_percent="0.14"
+            lib:layout_constraintHeight_percent="0.9"
+            lib:layout_constraintTop_toTopOf="@id/lbRDev"
+            lib:layout_constraintLeft_toRightOf="@id/edRemoteDev"
+            lib:layout_constraintBottom_toBottomOf="parent"
+            lib:layout_constraintRight_toRightOf="parent"
+            lib:layout_constraintVertical_bias="0.01"
+            lib:layout_constraintHorizontal_bias="0.05"
+            android:background="@drawable/mgray_btn"
+            android:padding="5px"
+            android:text="Connect"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <comcontrol.CPreButton
+            android:id="@+id/btnfresh"
+            style="@style/AllTextSize"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            lib:layout_constraintWidth_percent="0.14"
+            lib:layout_constraintHeight_percent="0.9"
+            lib:layout_constraintTop_toTopOf="@id/lbRDev"
+            lib:layout_constraintLeft_toRightOf="@id/btnConnect"
+            lib:layout_constraintBottom_toBottomOf="parent"
+            lib:layout_constraintRight_toRightOf="parent"
+            lib:layout_constraintVertical_bias="0.01"
+            lib:layout_constraintHorizontal_bias="0.1"
+            android:background="@drawable/btn_disable"
+            android:padding="5px"
+            android:text="Refresh"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+
+        <com.github.ybq.android.spinkit.SpinKitView
+
+            android:id="@+id/loadProgres"
+            style="@style/SpinKitView.Large.Circle"
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            lib:layout_constraintWidth_percent="0.22"
+            lib:layout_constraintHeight_percent="0.5"
+            lib:layout_constraintTop_toTopOf="@id/lbRDev"
+            lib:layout_constraintLeft_toRightOf="@id/btnfresh"
+            lib:layout_constraintBottom_toBottomOf="parent"
+            lib:layout_constraintRight_toRightOf="parent"
+            lib:layout_constraintVertical_bias="0.16"
+            lib:layout_constraintHorizontal_bias="0.2"
+            android:visibility="gone"
+            lib:SpinKit_Color="@color/white"
+            lib:SpinKit_firstDelay="8000"
+            lib:SpinKit_isNeedWatch="true" />
+    </android.support.constraint.ConstraintLayout>
+
+    <comcontrol.CPreTextView
+        android:id="@+id/htv1"
+        style="@style/listview_itemTV_style"
+        android:text="comcontrol.CPreTextView"
+        android:gravity="left"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        lib:layout_constraintWidth_percent="0.30"
+        lib:layout_constraintHeight_percent="0.08"
+        lib:layout_constraintTop_toBottomOf="@id/bk_topV"
+        lib:layout_constraintLeft_toLeftOf="parent"
+        lib:layout_constraintBottom_toBottomOf="parent"
+        lib:layout_constraintRight_toRightOf="parent"
+        lib:layout_constraintVertical_bias="0"
+        lib:layout_constraintHorizontal_bias="0"
+        android:textSize="35px" />
+
+
+    <ListView
+        android:id="@+id/ipLv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        lib:layout_constraintWidth_percent="0.98"
+        lib:layout_constraintHeight_percent="0.50"
+        lib:layout_constraintTop_toBottomOf="@id/htv1"
+        lib:layout_constraintLeft_toLeftOf="parent"
+        lib:layout_constraintBottom_toBottomOf="parent"
+        lib:layout_constraintRight_toRightOf="parent"
+        lib:layout_constraintVertical_bias="0.01"
+        lib:layout_constraintHorizontal_bias="0.5"
+        android:background="@color/ipcon_color"
+        android:divider="@drawable/white_line"
+        android:dividerHeight="1px" />
+    <comcontrol.CPreTextView
+        style="@style/AllTextSize"
+        android:id="@+id/lbSelect"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        lib:layout_constraintWidth_percent="0.01"
+        lib:layout_constraintHeight_percent="0.10"
+        lib:layout_constraintTop_toBottomOf="@id/ipLv"
+        lib:layout_constraintLeft_toLeftOf="parent"
+        lib:layout_constraintBottom_toBottomOf="parent"
+        lib:layout_constraintRight_toRightOf="parent"
+        lib:layout_constraintVertical_bias="0"
+        lib:layout_constraintHorizontal_bias="0"
+        android:gravity="right|center"
+        android:text=""
+        android:textColor="@color/white" />
+
+    <comcontrol.CPreTextView
+        style="@style/AllTextSize"
+        android:id="@+id/lbSelindex"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        lib:layout_constraintWidth_percent="0.40"
+        lib:layout_constraintHeight_percent="0.10"
+        lib:layout_constraintTop_toBottomOf="@id/ipLv"
+        lib:layout_constraintLeft_toRightOf="@id/lbSelect"
+        lib:layout_constraintBottom_toBottomOf="parent"
+        lib:layout_constraintRight_toRightOf="parent"
+        lib:layout_constraintVertical_bias="0"
+        lib:layout_constraintHorizontal_bias="0"
+        android:gravity="left|center"
+        android:text="Current selected index: 0"
+        android:textColor="@color/white" />
+
+    <comcontrol.CPreTextView
+        style="@style/AllTextSize"
+        android:id="@+id/lbTotal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        lib:layout_constraintWidth_percent="0.20"
+        lib:layout_constraintHeight_percent="0.10"
+        lib:layout_constraintTop_toBottomOf="@id/ipLv"
+        lib:layout_constraintLeft_toRightOf="@id/lbSelindex"
+        lib:layout_constraintBottom_toBottomOf="parent"
+        lib:layout_constraintRight_toRightOf="parent"
+        lib:layout_constraintVertical_bias="0"
+        lib:layout_constraintHorizontal_bias="0.2"
+        android:gravity="right|center"
+        android:text="Total Devices: "
+        android:textColor="@color/white" />
+
+    <comcontrol.CPreTextView
+        style="@style/AllTextSize"
+        android:id="@+id/lbDevNum"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        lib:layout_constraintWidth_percent="0.10"
+        lib:layout_constraintHeight_percent="0.10"
+        lib:layout_constraintTop_toBottomOf="@id/ipLv"
+        lib:layout_constraintLeft_toRightOf="@id/lbTotal"
+        lib:layout_constraintBottom_toBottomOf="parent"
+        lib:layout_constraintRight_toRightOf="parent"
+        lib:layout_constraintVertical_bias="0"
+        lib:layout_constraintHorizontal_bias="0"
+        android:gravity="left|center"
+        android:text="0"
+        android:textColor="@color/white"
+
+        />
+
+    <comcontrol.CPreTextView
+        android:id="@+id/lbVersion"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        lib:layout_constraintWidth_percent="1"
+        lib:layout_constraintHeight_percent="0.10"
+        lib:layout_constraintTop_toBottomOf="@id/lbDevNum"
+        lib:layout_constraintLeft_toLeftOf="parent"
+        lib:layout_constraintBottom_toBottomOf="parent"
+        lib:layout_constraintRight_toRightOf="parent"
+        lib:layout_constraintVertical_bias="0.98"
+        lib:layout_constraintHorizontal_bias="0.98"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/app_ver"
+        android:textColor="@color/white"
+        android:textSize="35px" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:lib="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <comcontrol.CPreButton
+        android:id="@+id/btn_mute"
+        style="@style/btn_mute_style"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        lib:layout_constraintTop_toTopOf="parent"
+        lib:layout_constraintLeft_toLeftOf="parent"
+        lib:layout_constraintRight_toRightOf="parent"
+        lib:layout_constraintBottom_toBottomOf="parent"
+
+        lib:layout_constraintHeight_percent="0.10"
+        lib:layout_constraintWidth_percent="1"
+        lib:layout_constraintHorizontal_bias="0.5"
+        lib:layout_constraintVertical_bias="0.01"
+        android:background="@drawable/g_to_r_btn"
+        android:text="@string/mute"
+        />
+
+    <comcontrol.CPreEdiTxt
+        android:id="@+id/tv_vdB"
+        style="@style/ts_mute_style"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        lib:layout_constraintTop_toBottomOf="@id/btn_mute"
+        lib:layout_constraintLeft_toLeftOf="parent"
+        lib:layout_constraintRight_toRightOf="parent"
+        lib:layout_constraintBottom_toBottomOf="parent"
+        lib:layout_constraintHeight_percent="0.06"
+        lib:layout_constraintWidth_percent="1"
+        lib:layout_constraintHorizontal_bias="0"
+        lib:layout_constraintVertical_bias="0.01"
+
+        android:layout_marginTop="10px"
+        android:digits="0123456789.-"
+        android:imeOptions="actionDone"
+        android:maxLength="8"
+        android:maxLines="1"
+        android:text="-18.0dB"
+        android:textColor="@color/lime" />
+
+    <comcontrol.CPreTextView
+        android:id="@+id/tv_oldChanel"
+        style="@style/ts_mute_style"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        lib:layout_constraintTop_toBottomOf="@id/tv_vdB"
+        lib:layout_constraintLeft_toLeftOf="parent"
+        lib:layout_constraintRight_toRightOf="parent"
+        lib:layout_constraintBottom_toBottomOf="parent"
+        lib:layout_constraintHeight_percent="0.06"
+        lib:layout_constraintWidth_percent="1"
+        lib:layout_constraintHorizontal_bias="0"
+        lib:layout_constraintVertical_bias="0.01"
+        android:background="@color/clear_color"
+        android:text="CH01" />
+
+    <cn.com.williamxia.wipack.control.CSlider
+        android:id="@+id/seekBar_x1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        lib:layout_constraintTop_toBottomOf="@id/tv_oldChanel"
+        lib:layout_constraintLeft_toLeftOf="parent"
+        lib:layout_constraintRight_toRightOf="parent"
+        lib:layout_constraintBottom_toBottomOf="parent"
+        lib:layout_constraintHeight_percent="0.68"
+        lib:layout_constraintWidth_percent="1"
+        lib:layout_constraintHorizontal_bias="0"
+        lib:layout_constraintVertical_bias="0.01"
+        app:MaxValue="190"
+        app:cslider_bkNormalImge="@drawable/gray_longfader"
+        app:cslider_bkPressImge="@drawable/blue_longfader"
+        app:tailGap="0.02"
+        app:thumbHeightRaito="0.18"
+        app:thumbOffset="-0.04"
+        app:thumbWidthRatio="0.26"
+        app:dockBottom="0.01"
+        app:dockTop="0.02"
+        app:headGap="0.04"
+        app:thumbImage="@drawable/faderhead_gray"
+        />
+
+    <comcontrol.CPreButton
+        android:id="@+id/tv_channel"
+        style="@style/ts_mute_style"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        lib:layout_constraintTop_toBottomOf="@id/seekBar_x1"
+        lib:layout_constraintLeft_toLeftOf="parent"
+        lib:layout_constraintRight_toRightOf="parent"
+        lib:layout_constraintBottom_toBottomOf="parent"
+        
+        lib:layout_constraintHeight_percent="0.06"
+        lib:layout_constraintWidth_percent="1"
+        
+        lib:layout_constraintHorizontal_bias="0.5"
+        lib:layout_constraintVertical_bias="0.01"
+        android:layout_below="@+id/seekBar_x1"
+        android:gravity="top|center"
+        android:text="CH01" />
+
+
+</android.support.constraint.ConstraintLayout>

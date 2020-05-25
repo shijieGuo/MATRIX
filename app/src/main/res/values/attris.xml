@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="CSingleVrButonGroup">
+        <attr name="matrix_group_tag" format="integer" />
+
+    </declare-styleable>
+
+
+    <declare-styleable name="SeekBarX">
+        <attr name="XDragable" format="boolean" />
+        <attr name="XImage_background" format="reference" />
+        <attr name="XThumb_background" format="reference"/>
+        <attr name="XImg_bg_press" format="reference"/>
+        <attr name="XMax_value" format="integer"/>
+        <attr name="XTag" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="CPreEdiTxt">
+        <attr name="edBaseScreenHeight" format="integer" />
+        <attr name="preEdit_iTag" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CButton">
+        <attr name="iTag" format="integer" />
+        <attr name="typeValue" format="integer" />
+        <attr name="parentID" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="CPreButton">
+        <attr name="butonScreenHeight" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CPreTextView">
+        <attr name="baseScreenHeight" format="integer" />
+    </declare-styleable>
+
+</resources>

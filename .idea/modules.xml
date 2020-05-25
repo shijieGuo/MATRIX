@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MATRIX.iml" filepath="$PROJECT_DIR$/MATRIX.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dialoglibrary/dialoglibrary.iml" filepath="$PROJECT_DIR$/dialoglibrary/dialoglibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spinKit/spinKit.iml" filepath="$PROJECT_DIR$/spinKit/spinKit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wipack/wipack.iml" filepath="$PROJECT_DIR$/wipack/wipack.iml" />
+    </modules>
+  </component>
+</project>

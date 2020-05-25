@@ -1,0 +1,15 @@
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:lib="http://schemas.android.com/apk/res-auto"
+       xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color"
+       tools:context="WinPages.Page_Preset"
+        >
+
+    <include layout="@layout/layout_preset"/>
+
+</android.support.constraint.ConstraintLayout>
+
+

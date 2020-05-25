@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+
+    <comcontrol.CPreTextView
+        android:id="@+id/tv_oldChanelName"
+        style="@style/AllTextSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Channel:Input CH01"
+        android:textColor="@color/white"
+        android:textSize="25px"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="42px"
+        android:background="@drawable/grid_preset_all"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+
+
+        <comcontrol.CPreEdiTxt
+            android:id="@+id/ed_new_chanelName"
+            android:layout_width="500px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="5px"
+            android:background="@null"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:hint="input new channel name"
+            android:maxLength="9"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textColorHint="@color/bg_color"
+            android:textSize="35px"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

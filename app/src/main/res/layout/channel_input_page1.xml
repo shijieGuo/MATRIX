@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/ar_input_page1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lib="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+
+  
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/al_input1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        lib:layout_constraintWidth_percent="0.16"
+        lib:layout_constraintHeight_percent="1"
+        lib:layout_constraintTop_toTopOf="parent"
+        lib:layout_constraintLeft_toLeftOf="parent"
+        lib:layout_constraintBottom_toBottomOf="parent"
+        lib:layout_constraintRight_toLeftOf="@id/al_input2"
+        lib:layout_constraintVertical_bias="0.01"
+        lib:layout_constraintHorizontal_bias="0.01"
+      >
+        <include layout="@layout/fader_page_item"/>
+    </android.support.constraint.ConstraintLayout>
+
+    
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/al_input2"
+        android:padding="5px"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        lib:layout_constraintWidth_percent="0.16"
+        lib:layout_constraintHeight_percent="1"
+        lib:layout_constraintTop_toTopOf="parent"
+        lib:layout_constraintLeft_toRightOf="@id/al_input1"
+        lib:layout_constraintBottom_toBottomOf="parent"
+        lib:layout_constraintRight_toLeftOf="@id/al_input3"
+        lib:layout_constraintVertical_bias="0.01"
+        lib:layout_constraintHorizontal_bias="0.01"
+
+
+        android:orientation="vertical">
+        <include layout="@layout/fader_page_item"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/al_input3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        lib:layout_constraintWidth_percent="0.16"
+        lib:layout_constraintHeight_percent="1"
+        lib:layout_constraintTop_toTopOf="parent"
+        lib:layout_constraintLeft_toRightOf="@id/al_input2"
+        lib:layout_constraintBottom_toBottomOf="parent"
+        lib:layout_constraintRight_toLeftOf="@id/al_input4"
+        lib:layout_constraintVertical_bias="0.01"
+        lib:layout_constraintHorizontal_bias="0.01"
+        android:padding="5px"
+        android:orientation="vertical">
+        <include layout="@layout/fader_page_item"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/al_input4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        lib:layout_constraintWidth_percent="0.16"
+        lib:layout_constraintHeight_percent="1"
+        lib:layout_constraintTop_toTopOf="parent"
+        lib:layout_constraintLeft_toRightOf="@id/al_input3"
+        lib:layout_constraintBottom_toBottomOf="parent"
+        lib:layout_constraintRight_toLeftOf="@id/al_input5"
+        lib:layout_constraintVertical_bias="0.01"
+        lib:layout_constraintHorizontal_bias="0.01"
+        android:padding="5px"
+        android:orientation="vertical">
+        <include layout="@layout/fader_page_item"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/al_input5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        lib:layout_constraintWidth_percent="0.16"
+        lib:layout_constraintHeight_percent="1"
+        lib:layout_constraintTop_toTopOf="parent"
+        lib:layout_constraintLeft_toRightOf="@id/al_input4"
+        lib:layout_constraintBottom_toBottomOf="parent"
+        lib:layout_constraintRight_toLeftOf="@id/al_input6"
+        lib:layout_constraintVertical_bias="0.01"
+        lib:layout_constraintHorizontal_bias="0.01"
+        android:padding="5px"
+        android:orientation="vertical">
+        <include layout="@layout/fader_page_item"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/al_input6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        lib:layout_constraintWidth_percent="0.16"
+        lib:layout_constraintHeight_percent="1"
+        lib:layout_constraintTop_toTopOf="parent"
+        lib:layout_constraintLeft_toRightOf="@id/al_input5"
+        lib:layout_constraintBottom_toBottomOf="parent"
+        lib:layout_constraintRight_toRightOf="parent"
+        lib:layout_constraintVertical_bias="0.01"
+        lib:layout_constraintHorizontal_bias="0.01"
+        android:padding="5px"
+        android:orientation="vertical">
+        <include layout="@layout/fader_page_item"/>
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,68 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        javaCompileOptions
+                {
+                    annotationProcessorOptions
+                            {
+                                includeCompileClasspath true
+                            }
+
+                }
+
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+allprojects{
+
+    repositories{
+        jcenter()
+        google()
+
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+    }
+
+}
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")
+                    && !requested.name.startsWith("exifinterface")) {
+                details.useVersion '24.2.1'
+                //不设置24.2.1但是设置到了25就找不到布局，全部不管好像又冲突设置24.2.1 那么 要么冲突 要么       java.lang.NoSuchFieldError: No field notification_template_lines of type
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.android.support:appcompat-v7:25.3.1'
+    testImplementation 'junit:junit:4.12'
+    implementation 'me.yokeyword:fragmentation:1.3.3'
+    implementation 'me.yokeyword:eventbus-activity-scope:1.1.0'
+}
